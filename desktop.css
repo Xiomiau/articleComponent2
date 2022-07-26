@@ -1,0 +1,118 @@
+
+.container {
+    display: grid;
+    grid-template-columns:  400px 600px;
+    grid-template-rows: repeat(4, 125px);
+}
+.card {
+    display: grid;
+    grid-template-columns:  400px 600px;
+    grid-template-rows: 200px 200px;
+    max-width: 1000px;
+}
+
+.container-img {
+    grid-column: 1;
+    grid-row: 1/3;
+    height: 500px;
+}
+
+.container-title {
+    grid-column: 2;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.container-sub {
+    grid-column: 2;
+    font-size: 1.3rem;
+}
+
+.profile, .share-mobile {
+    display: none;
+}
+.profile-desktop {
+    display: grid;
+    grid-row: 3;
+    grid-column: 2;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 60px 230px 100px;
+    column-gap: 30px;
+    place-content: center;
+    letter-spacing: 0;
+}
+
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    margin-right: 2rem;
+}
+
+.desktop {
+margin-left: 5rem;
+width: 50px;
+height: 50px;
+}
+.share-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color: var(--Very-Dark-Grayish-Blue); 
+    grid-column: 2;
+    justify-items: center;
+    height: 50px;
+    width: 300px;
+    border-radius: 1rem;
+    position: relative;
+    left: 23.5rem;
+    bottom: 9rem;
+
+}
+
+.share-desktop a {
+    padding: 1rem .5rem;
+    color: var(--Light-Grayish-Blue) ;
+}
+
+.share-desktop .sharep {
+    padding: 1rem .5rem;
+    letter-spacing: .5rem;
+    color: var(--Light-Grayish-Blue) ;
+    text-transform: uppercase;
+}
+
+.triangle-down {
+    position: absolute;
+    top: 2.8rem;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid var(--Very-Dark-Grayish-Blue);
+}
+
+.inactive {
+    display: none;
+}
+
+@media  (min-width:1441px) {
+
+    .container {
+        max-width: 1100px;
+    }
+
+    .card {
+        max-width: 1100px;
+
+    }
+    .profile-desktop {
+        display: grid;
+        grid-row: 3;
+        grid-column: 2;
+        grid-template-rows: 30px 30px;
+        grid-template-columns: 60px 230px 100px;
+        column-gap: 10px;
+        place-content: center;
+        letter-spacing: 0;
+    }
+}
