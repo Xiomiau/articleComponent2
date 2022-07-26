@@ -27,7 +27,6 @@ body {
     background-color: var(--Light-Grayish-Blue);
     margin: 4rem auto 0;
     border-radius: 1rem;
-    overflow: hidden;
 }
 
 .container-img {
@@ -36,6 +35,7 @@ body {
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .container-title {
@@ -72,6 +72,7 @@ body {
     grid-column: 2;
     grid-row: 1;
     color: var(--Very-Dark-Grayish-Blue);
+    font-weight: bold;
 }
 
 .profile-date {
@@ -84,7 +85,7 @@ body {
 .profile-share-icon {
     width: 35px;
     height: 35px;
-    background-color: var(--Very-Dark-Grayish-Blue);
+    background-color: var(--Grayish-Blue);
     grid-column: 3;
     background-image: url(/images/icon-share.svg);
     background-repeat:no-repeat ;
@@ -127,6 +128,6 @@ footer a {
     padding: .5rem;
 }
 
-.inactive, .profile-desktop {
+.inactive, .profile-desktop, .share-desktop {
     display: none;
 }
